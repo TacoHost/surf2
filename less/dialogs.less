@@ -9,9 +9,13 @@
 @lightly-gray-white: #fafafa;
 
 @light-blue: #4ac7f0;
+
+@us-avatar-wh: 45px;
+
 .dialogs-page {
   box-shadow: none !important;
   border: 1px solid  @medium-gray;
+  border-left: none;
   border-top: none;
   background: @lightly-gray-white;  margin-bottom: 20px;
 }
@@ -25,16 +29,28 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 40px;
-  border-bottom: 1px solid  @medium-gray;
-  color: #f00;
+  border-bottom: 1px solid  #dfdfdf;
+  color: #e73f3f;
+  background: transparent;
+  a {
+    color: #bbbbbb;
+    &:after {
+        display: inline-block;
+        content: ">";
+        margin-left: 12px;
+        margin-right: 12px;
+        font-weight: 300;
+        font-size: 12px;
+    }
+  }
+  
 }
-.breadcrumbs-block a:after {
-  display: inline-block;
-  content: ">";
-  margin-left: 12px;
-  font-weight: 300;
-  font-size: 12px;
-  color: #bbb;
+
+.breadcrumbs-block a.active{
+  
+      color: #e73f3f;
+    
+    
 }
 
 .breadcrumbs-block a.active:after{
@@ -52,7 +68,7 @@
 .scroll-pane-arrows
 {
   width: 100%;
-  height: 85vh;
+  height: 70vh;
   overflow: auto;
 }
 
@@ -70,7 +86,6 @@
     // height: 100px !important; @medium-gray !important;
     &:active {
       background: rgb(190, 190, 190);
-
       }
 
 }
@@ -79,35 +94,10 @@
   height: 100px !important;
 }
 
-.scrollbar{
-
+.messages.jspContainer {
+  width: 100% !important; 
 }
 
-
-
-/* Let's get this party started */
-.scrollbar::-webkit-scrollbar {
-    width: 12px;
-}
- 
-/* Track */
-.scrollbar::-webkit-scrollbar-track {
-    // -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #eee;
-}
- 
-/* Handle */
-.scrollbar::-webkit-scrollbar-thumb,-moz-scrollbar-thumb {
-    -webkit-border-radius: 1px;
-    border-radius: 10px;
-    background: #aaa;
-    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(20,20,20,0.4); 
-}
 
 /* Contacts */
 
@@ -123,11 +113,11 @@
     min-height: 100vh;
     width: 100%;
     border: 1px solid @medium-gray;
+    border-left: none;
     border-right: none;
-    z-index: -1;
+    // z-index: 1;
 
   }
-
 
 .contacts {
   ul {
@@ -137,27 +127,40 @@
     }
   }
 
-
 .user-avatar{
-    width: 45px;
-    height: 45px;
+    width: @us-avatar-wh;
+    height: @us-avatar-wh;
   }
 
+.img-overlay {
+  .user-avatar;
+  background-color: rgba(0, 168, 255, 0.75); 
+  position: absolute;
+  color: #FFF;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 18px;
+}
   .material-icons.md-18 { font-size: 18px; }
   .material-icons.md-14 { font-size: 14px; }
+  .material-icons {
+    vertical-align: middle;
+  }
 
 a.user{
   cursor: pointer;
   display: block;
   width: 100%;
-  border-bottom: 1px solid @medium-gray;
-  border-right: 1px solid @medium-gray;
+  border-bottom: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
   text-decoration: none;
   font-weight: 700;
   color: @dark-gray;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 13px; 
+  position: relative;
  
   &:hover {
     cursor: pointer;
@@ -200,45 +203,134 @@ a.active-user {
 /* Messages */
 
 .messages {
-   position: relative;
+  position: relative;
+  background: -webkit-linear-gradient(left, #fafafa, #ebebeb);
+  background: -o-linear-gradient(left, #fafafa, #ebebeb);
+  background: linear-gradient(to right, #fafafa, #ebebeb);
 }
 
 .messages-wrapper {
   width: 100%;
- 
-  background: @lightly-gray-white;
-  // border: 2px solid green;
-  border-right: 1px solid @medium-gray;
   position: relative;
-
+    .user-avatar{
+    height: 35px;
+    width: 35px;
+  }
+  // background: @lightly-gray-white;
+  background: transparent;
+  // border: 2px solid green;
+  // border-right: 1px solid @medium-gray;
+ 
 }
 
 .message-bar {
+  
   position: absolute;
   bottom: 0;
-
+  left: 15px;
   z-index: 10;
-  background: @dark-gray;
-  width: 100%;
+  background: -webkit-linear-gradient(left, #fafafa, #ebebeb);
+  background: -o-linear-gradient(left, #fafafa, #ebebeb);
+  background: linear-gradient(to right, #fafafa, #ebebeb);
+  width: 95%;
   padding-bottom: 0;
+
+  .user-avatar{
+    height: 35px;
+    width: 35px;
+  }
+  .user-status {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    span {
+      padding-left: 20px;
+      color: #949494;
+    }
+  }
   textarea{
     width:100%;
+    min-height: 94px;
+    margin-right: 25px;
+    resize: none;
+  }
+  .button {
+    text-align: center;
+    padding: 10px; 
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    float: left;
+    cursor: pointer;
+  }
+
+  input[type="submit"]{
+    .button;
+    font-weight: 700;
+    background: #1b95bd;
+    border: 1px solid #136c89;
+    color: #FFF;
+  }
+
+  .fileform { 
+    float: left;
+    cursor: pointer;
+}
+ 
+.fileform .selectbutton { 
+   .button;
+    background-color: #e9e9e9;
+    border: 1px solid #cecece;
+    color: @dark-gray;
+    font-size: 12px; 
+    vertical-align: middle;
+    position: relative;
+    // &:hover {
+    //   background-color: blue;
+    //   color: #FFF;
+    // }
+}
+ 
+  .fileform #upload{
+    position:absolute; 
+    cursor: pointer;
+    .button; 
+    -moz-opacity: 0; 
+    filter: alpha(opacity=0); 
+    opacity: 0; 
+    font-size: 12px; 
+    z-index:20;
+  }
+  .fileform #fileformlabel {
+    .button;
+    display: block;
+    float: left;
+    vertical-align: middle;
   }
 }
+
 .messages {
   position: relative;
-  // border: 1px solid red;
   width: 100%;
-  clear: both;
   top: 0;
   left: 0;
+    .user-avatar{
+    height: 35px;
+    width: 35px;
+  }
+}
+
+.message-box {
 
 }
+
 .box-one-message {
   position: relative;
   clear: both;
   bottom: 0;
-  left: 0;
+  // left: 0;
   z-index: 9;
   margin-bottom: 20px;
   font-size: 12px;
@@ -260,4 +352,14 @@ a.active-user {
  .date {
   color: #b7b7b7;
  }
+  
+  
 }
+
+.non-readed {
+  .text-message {
+    border-left: 2px solid @light-blue;
+  }
+}
+
+

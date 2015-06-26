@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="row dialogs-page" >
                    
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding-left">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding-left no-padding-right">
                             <div class="breadcrumbs-block colored-border-top">
                                     <div class="padding-lr">
                                         <a href="javascript:void(0);">Моя страница</a>
@@ -53,25 +53,23 @@
                             </div>
                         </div>
 
-
-
                         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding-left">
-
-                           
                              <!-- Recommend Toggle button -->
-                                <div class="scroll-pane">
+                           <div class="scroll-pane">
                              <div class="contacts contacts-sidebar">
 
                                 <ul class="sidebar-nav no-padding-left">
                                     <li>
                                         <a class="user">
+                                        		<div class="img-overlay rounded-image bordered-image">3</div>
                                             <img src='img/users/user3.png' alt="" class="user-avatar rounded-image bordered-image"> 
                                             <span class="user-name">Юлия Василевская</span>
                                             <span class="status status-online"><i class="material-icons md-18">brightness_1</i></span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="active-user user " >
+                                        <a class="active-user user" >
+                                        <div class="img-overlay rounded-image bordered-image">1</div>
                                             <img src='img/users/user1.png' alt="" class="user-avatar rounded-image bordered-image"> 
                                             <span class="user-name">Аня Куликова</span>
                                             <span class="status status-offline"><i class="material-icons md-18">brightness_1</i></span>
@@ -98,8 +96,6 @@
                                             <span class="status status-online"><i class="material-icons md-18">brightness_1</i></span>
                                         </a>
                                     </li>
-
-
                                     <li>
                                         <a class="user">
                                             <img src='img/users/user3.png' alt="" class="user-avatar rounded-image bordered-image"> 
@@ -118,7 +114,7 @@
                                         <a class="user">
                                             <img src='img/users/user5.png' alt="" class="user-avatar rounded-image bordered-image"> 
                                             <span class="user-name">Марк Попов</span>
-                                            <span class="status status-online"><i class="material-icons md-18">brightness_1</i></span>
+                                            <span class="status status-offline"><i class="material-icons md-18">brightness_1</i></span>
                                         </a>
                                     </li>
                                     <li>
@@ -135,7 +131,6 @@
                                             <span class="status status-online"><i class="material-icons md-18">brightness_1</i></span>
                                         </a>
                                     </li>
-
                                     <li>
                                         <a class="user">
                                             <img src='img/users/user3.png' alt="" class="user-avatar rounded-image bordered-image"> 
@@ -144,7 +139,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="active-user user " >
+                                        <a class="user " >
                                             <img src='img/users/user1.png' alt="" class="user-avatar rounded-image bordered-image"> 
                                             <span class="user-name">Аня Куликова</span>
                                             <span class="status status-offline"><i class="material-icons md-18">brightness_1</i></span>
@@ -172,51 +167,112 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
+                            </div> <!-- ./contacts contacts-sidebar -->
+                        </div> <!-- ./scroll-pane -->
+                    </div> <!-- ./col-xs-12 col-sm-12 col-md-3 col-lg-3 -->
 
                     
-                    <div class="col-lg-8 col-lg-offset-1">
-                        <div class="messages-wrapper no-padding-left">
-                         <div class=" messages scroll-pane" id="ex3" style="overflow-y: scroll;">
-                            <div class="box-one-message clear">
-                                <img class="user-avatar rounded-image" src="img/users/user6.png">
-                                <span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, numquam?</span>
-                                <span class="date"><i class="material-icons md-14">check</i> 19:23, 15.04.2015</span>
-                            </div>
-                            <div class="box-one-message">
-                                <img class="user-avatar rounded-image" src="img/users/user6.png">
-                                <span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod soluta porro maxime harum quidem culpa neque, fuga odio, accusamus vitae eligendi aspernatur velit, aperiam pariatur!</span><span class="date"><i class="material-icons md-14">check</i> 19:45, 15.04.2015</span>
-                            </div>
-                            <div class="box-one-message">
-                                <img class="user-avatar rounded-image" src="img/users/user6.png">
-                                <span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                                </span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                            </div>
-                        </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 no-padding-right">
+              
+                    		<div class="messages-wrapper no-padding-left">
+                    			<div class="messages scroll-pane" id="ex3">
+                    				<div class="message-box">
+                    					<div class="box-one-message clear">
+                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
+                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, numquam?</span>
+                    						<span class="date"><i class="material-icons md-14">check</i> 19:23, 15.04.2015</span>
+                    					</div> <!-- ./box-one-message -->
+                    					<div class="box-one-message">
+                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
+                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod soluta porro maxime harum quidem culpa neque, fuga odio, accusamus vitae eligendi aspernatur velit, aperiam pariatur!</span><span class="date"><i class="material-icons md-14">check</i> 19:45, 15.04.2015</span>
+                    					</div> <!-- ./box-one-message -->
+                    					<div class="box-one-message">
+                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
+                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
+                    					</div> <!-- ./box-one-message -->
 
+                    					<div class="box-one-message">
+                    						<img class="user-avatar rounded-image" src="img/users/user7.png">
+                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
+                    					</div> <!-- ./box-one-message -->
 
+                    					<div class="box-one-message ">
+                    						<img class="user-avatar rounded-image" src="img/users/user7.png">
+                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quae laudantium odit mollitia atque facilis ad, voluptatum quasi nihil voluptatem aliquam in molestiae commodi, error et, numquam omnis dolore ratione.
+                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
+                    					</div> <!-- ./box-one-message -->
+
+                    					<div class="box-one-message">
+                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
+                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
+                    					</div> <!-- ./box-one-message -->
+
+                    					<div class="box-one-message">
+                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
+                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
+                    					</div> <!-- ./box-one-message -->
+
+                    					<div class="box-one-message">
+                    						<img class="user-avatar rounded-image" src="img/users/user7.png">
+                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
+                    					</div> <!-- ./box-one-message -->
+
+                    					<div class="box-one-message non-readed">
+                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
+                    						<span class="text-message">Not readed messageLorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
+                    					</div> <!-- ./box-one-message -->
+                    					</div> <!-- ./message-box -->
+                    			</div> <!-- ./messages scroll-pane -->
+                    		</div> <!-- ./messages-wrapper -->
+       
+         
                         <div class="message-bar">
                             <div class="user-status">
-                                <div class="user-icon"></div>
-                                <p><i></i>Набирает сообщение</p>
+                                <img class="user-avatar rounded-image" src="img/users/user1.png">
+                                <span>Аня набирает сообщение</span>
                             </div>
                             <form action="">
                                <textarea name="" placeholder="Введите текст сообщения..."></textarea>
                                <input type="submit" value="Отправить сообщение">
-                               <input type="file" placeholder="Прикрепить файл">
+
+                               <div class="fileform">
+                             	  <div class="selectbutton"><i class="material-icons md-14">attach_file</i>Прикрепить файл</div><div id="fileformlabel"></div>
+                               	<input id="upload" type="file" name="upload" onchange="getName(this.value);" />
+                               </div> <!-- ./fileform -->
+                            <!--   <input type="file" placeholder="Прикрепить файл"> -->
                            </form>
-                       </div>
-                   </div>
-             </div>
-         </div>
-     </div>
+                       </div> <!-- ./message-bar -->
+                   </div> <!-- ./col-lg-8 col-lg-offset-1 -->
+             
+             </div> <!-- ./row dialogs-page -->
+         </div> <!-- ./container -->
+         
+     
  </div>
  <div class="footer-fix"></div>
 </div>
         <div id="js-footer"></div>
        
+       <!-- function including filename   -->
+        <script type="text/javascript">
+        	function getName (str){
+        		if (str.lastIndexOf('\\')){
+        			var i = str.lastIndexOf('\\')+1;
+        		}
+        		else{
+        			var i = str.lastIndexOf('/')+1;
+        		}						
+        		var filename = str.slice(i);			
+        		var uploaded = document.getElementById("fileformlabel");
+        		uploaded.innerHTML = filename;
+        	}
+        </script>
 
         <script type="text/javascript">
             $("#js-footer").load("footer.html");
