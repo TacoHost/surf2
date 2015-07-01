@@ -1,375 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>
-            Surf
-        </title>
-        <!-- latest jQuery direct from google's CDN -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-        </script>
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>
+		Surf
+	</title>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <![endif]-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- CSS and Scripts -->
-        <link href="css/bootstrap_override.css" rel="stylesheet">
-      
-        <link href="less/layout.min.css" rel="stylesheet">
-        <link href="plugins/sliderpro/slider-pro.min.css" rel="stylesheet">
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <!-- CSS  -->
+            <link href="css/bootstrap_override.css" rel="stylesheet">
 
-        <!-- styles needed by jScrollPane -->
-        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
-        <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-        <link href="less/dialogs.css" rel="stylesheet">
-        
-    </head>
-    <body style="">
-        <div class="footer-wrapper">
-            <div id="js-header"></div>
-            <script type="text/javascript">
-                $("#js-header").load("header.html");
-            </script>
+            <link href="less/layout.min.css" rel="stylesheet">
+            <link href="less/dialogs.css" rel="stylesheet">
+            <!-- <link rel="stylesheet" href="less/breadcrumbs.css"> -->
+            <!-- <link href="plugins/sliderpro/slider-pro.min.css" rel="stylesheet"> -->
+            <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+            <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
 
-            <div class="container">
-                <div class="row dialogs-page" >
-                   
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding-left no-padding-right">
-                            <div class="breadcrumbs-block colored-border-top">
-                                    <div class="padding-lr">
-                                        <a href="javascript:void(0);">Моя страница</a>
-                                        <a href="javascript:void(0);" class="active">Диалоги</a>
-                                    </div>
-                            </div>
-                        </div>
 
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding-left">
-                             <!-- Recommend Toggle button -->
-                           
-                             <div class="contacts  contacts-sidebar">
-                                <ul class="sidebar-nav no-padding-left">
-                                    <li>
-                                        <a class="user">
-                                        		<div class="img-overlay rounded-image bordered-image">3</div>
-                                            <img src='img/users/user3.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Юлия Василевская</span>
-                                            <span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="active-user user" >
-                                        <div class="img-overlay rounded-image bordered-image">1</div>
-                                            <img src='img/users/user1.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Аня Куликова</span>
-                                            <span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user5.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Марк Попов</span>
-                                            <span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user9.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Миша Голубович</span>
-                                            <span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user10.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Валерий Кричинский</span>
-                                            <span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user3.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Юлия Василевская</span>
-                                            <span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user" >
-                                            <img src='img/users/user1.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Аня Куликова</span>
-                                            <span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user5.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Марк Попов</span>
-                                            <span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user9.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Миша Голубович</span>
-                                            <span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user10.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Валерий Кричинский</span>
-                                            <span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user3.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Юлия Василевская</span>
-                                            <span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user " >
-                                            <img src='img/users/user1.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Аня Куликова</span>
-                                            <span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user5.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Марк Попов</span>
-                                            <span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user9.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Миша Голубович</span>
-                                            <span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="user">
-                                            <img src='img/users/user10.png' alt="" class="user-avatar rounded-image bordered-image"> 
-                                            <span class="user-name">Валерий Кричинский</span>
-                                            <span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div> <!-- ./contacts contacts-sidebar -->
-                  
-                    </div> <!-- ./col-xs-12 col-sm-12 col-md-3 col-lg-3 -->
+          </head>
+          <body style="">
+          	<div class="footer-wrapper">
+          		<div id="js-header"></div>
+          		<script type="text/javascript">
+          			$("#js-header").load("header.html");
+          		</script>
+          		<div class="container">
+          			<div class="row">
 
-                    
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 no-padding-right">
-                    		<div class="messages-wrapper no-padding-left">
+          				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding-left no-padding-right">
+          					<div class="breadcrumbs-block colored-border-top orange">
+          						<div class="padding-lr">
+          							<a href="javascript:void(0);">Моя страница</a>
+          							<a href="javascript:void(0);" class="active">Диалоги</a>
+          						</div>
+          					</div>
+          				</div>
+          			</div>
 
-                    			<div class="messages" id="ex3">
-                
-                    				<div class="message-box">
-                    				
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user9.png">
-                    						<span class="text-message">This is the first message</span>
-                    						<span class="date"><i class="material-icons md-14">check</i> 19:23, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod soluta porro maxime harum quidem culpa neque, fuga odio, accusamus vitae eligendi aspernatur velit, aperiam pariatur!</span><span class="date"><i class="material-icons md-14">check</i> 19:45, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          			<div class="row dialogs-page" >
+          				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 no-padding-left">
+          					<!-- Recommend Toggle button -->
 
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          					<div class="contacts  contacts-sidebar">
+          						<ul class="sidebar-nav no-padding-left">
+          							<li>
+          								<a class="user">
+          									<div class="img-overlay rounded-image bordered-image">3</div>
+          									<img src='img/users/user3.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Юлия Василевская</span>
+          									<span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="active-user user" >
+          									<div class="img-overlay rounded-image bordered-image">1</div>
+          									<img src='img/users/user1.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Аня Куликова</span>
+          									<span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user5.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Марк Попов</span>
+          									<span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user9.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Миша Голубович</span>
+          									<span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user10.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Валерий Кричинский</span>
+          									<span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user3.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Юлия Василевская</span>
+          									<span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user" >
+          									<img src='img/users/user1.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Аня Куликова</span>
+          									<span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user5.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Марк Попов</span>
+          									<span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user9.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Миша Голубович</span>
+          									<span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user10.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Валерий Кричинский</span>
+          									<span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user3.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Юлия Василевская</span>
+          									<span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user " >
+          									<img src='img/users/user1.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Аня Куликова</span>
+          									<span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user5.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Марк Попов</span>
+          									<span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user9.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Миша Голубович</span>
+          									<span class="status status-offline"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          							<li>
+          								<a class="user">
+          									<img src='img/users/user10.png' alt="" class="user-avatar rounded-image bordered-image"> 
+          									<span class="user-name">Валерий Кричинский</span>
+          									<span class="status status-online"><i class="material-icons md-14">brightness_1</i></span>
+          								</a>
+          							</li>
+          						</ul>
+          					</div> <!-- ./contacts contacts-sidebar -->
 
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
-                    									<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod soluta porro maxime harum quidem culpa neque, fuga odio, accusamus vitae eligendi aspernatur velit, aperiam pariatur!</span><span class="date"><i class="material-icons md-14">check</i> 19:45, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          				</div> <!-- ./col-xs-12 col-sm-12 col-md-3 col-lg-3 -->
 
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
 
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          				<div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 no-padding-right">
+          					<div class="messages-wrapper no-padding-left">
+          						<div class="messages" id="ex3">
+          							<div class="message-box">
 
-                  
-                  				<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod soluta porro maxime harum quidem culpa neque, fuga odio, accusamus vitae eligendi aspernatur velit, aperiam pariatur!</span><span class="date"><i class="material-icons md-14">check</i> 19:45, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user9.png">
+          									<span class="text-message">This is the first message</span>
+          									<span class="date"><i class="material-icons md-14">check</i> 19:23, 15.04.2015</span>
+          								</div> <!-- ./box-one-message -->
+          								
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user1.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod soluta porro maxime harum quidem culpa neque, fuga odio, accusamus vitae eligendi aspernatur velit, aperiam pariatur!</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user9.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
 
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user1.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
 
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user9.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
+													
+															<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user9.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
 
-                  
-                  				<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod soluta porro maxime harum quidem culpa neque, fuga odio, accusamus vitae eligendi aspernatur velit, aperiam pariatur!</span><span class="date"><i class="material-icons md-14">check</i> 19:45, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user1.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
 
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user9.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
+													
+															<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user9.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
 
-                    					<div class="box-one-message">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user1.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
 
-                  
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user9.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
+													
+															<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user9.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
+
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user1.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
+
+          								<div class="box-one-message">
+          									<img class="user-avatar rounded-image" src="img/users/user9.png">
+          									<span class="text-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus?
+          									</span><span class="date"><span class="readed-msg-tooltip"><i class="material-icons md-14">check</i> 20:20, 15.04.2015<span class="tooltip-text">Сообщение прочитано</span></span></span>
+          								</div> <!-- ./box-one-message -->
+													
+													
+
+          								<div class="box-one-message non-readed">
+          									<img class="user-avatar rounded-image" src="img/users/user1.png">
+          									<span class="text-message">Not readed messageLorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus? And this is the last message
+          									</span><span class="date"> 20:20, 15.04.2015</span>
+          								</div> <!-- ./box-one-message -->
+          							</div>   <!-- ./messages box -->
+
+          						</div> <!-- ./messages -->
 
 
 
-                    					<div class="box-one-message non-readed">
-                    						<img class="user-avatar rounded-image" src="img/users/user1.png">
-                    						<span class="text-message">Not readed messageLorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore, possimus? And this is the last message
-                    						</span><span class="date"><i class="material-icons md-14">check</i> 20:20, 15.04.2015</span>
-                    					</div> <!-- ./box-one-message -->
-                    					</div>   <!-- ./messages box -->
-         
-                    			</div>
-                    		
-       
-       
-                        <div class="message-bar">
-                        <div class="row">
-                            <div class="user-status">
-                                <img class="user-avatar rounded-image" src="img/users/user1.png">
-                                <span>Аня набирает сообщение</span>
-                            </div>
-	                       </div> <!-- ./row -->
-                            <form action="">
-                            <div class="row">
-                               <textarea name="" placeholder="Введите текст сообщения..."></textarea>
-                            </div> <!-- ./row -->
-                            <div class="row">
-                               <input type="submit" value="Отправить сообщение">
+          						<div class="message-bar">
+          							<div class="row">
+          								<div class="user-status">
+          									<img class="user-avatar rounded-image" src="img/users/user1.png">
+          									<span><i class="material-icons md-14">create</i> Аня набирает сообщение</span>
+          								</div> <!-- ./ user-status -->
+          							</div> <!-- ./row -->
+          							<form action="">
+          								<div class="row">
+          									<textarea name="" placeholder="Введите текст сообщения..."></textarea>
+          								</div> <!-- ./row -->
+          								<div class="row">
+          									<input type="submit" value="Отправить сообщение">
 
-                               <div class="fileform">
-                             	  <div class="selectbutton"><i class="material-icons md-14">attach_file</i>Прикрепить файл</div><div id="fileformlabel"></div>
-                               	<input id="upload" type="file" name="upload" onchange="getName(this.value);" />
-                               </div> <!-- ./fileform -->
-                            </div> <!-- ./row -->
-                            <!--   <input type="file" placeholder="Прикрепить файл"> -->
-                           </form>
-                       </div> <!-- ./message-bar -->
-         				
-          </div> <!-- ./messages-wrapper -->
-                   </div> <!-- ./col-lg-8 col-lg-offset-1 -->
-             
-             </div> <!-- ./row dialogs-page -->
-         </div> <!-- ./container -->
-         
-     
- </div>
- <div class="footer-fix"></div>
-</div>
-        <div id="js-footer"></div>
-       
-       <!-- function including filename   -->
-        <script type="text/javascript">
-        	function getName (str){
-        		if (str.lastIndexOf('\\')){
-        			var i = str.lastIndexOf('\\')+1;
-        		}
-        		else{
-        			var i = str.lastIndexOf('/')+1;
-        		}						
-        		var filename = str.slice(i);			
-        		var uploaded = document.getElementById("fileformlabel");
-        		uploaded.innerHTML = filename;
-        	}
-        </script>
+          									<div class="fileform">
+          										<div class="selectbutton"><i class="material-icons md-14">attach_file</i>Прикрепить файл</div><div id="fileformlabel"></div>
+          										<input id="upload" type="file" name="upload" onchange="getName(this.value);" />
 
-        <script type="text/javascript">
-        	$("#js-footer").load("footer.html");
-        </script>
+          									</div> <!-- ./fileform -->
+          									<a href="#" class="spam">Пожаловаться на спам</a>
+          							</div> <!-- ./row -->
+          							</form>
+          						</div> <!-- ./message-bar -->
+
+          					</div> <!-- ./messages-wrapper -->
+          				</div> <!-- ./col-lg-8 col-lg-offset-1 -->
+
+          			</div> <!-- ./row dialogs-page -->
+          		</div> <!-- ./container -->
+
+
+          	</div>
+          	<div class="footer-fix"></div>
+          </div>
+          <div id="js-footer"></div>
+
+          <!-- function that adds the filename to input   -->
+          <script type="text/javascript">
+          	function getName (str){
+          		if (str.lastIndexOf('\\')){
+          			var i = str.lastIndexOf('\\')+1;
+          		}
+          		else{
+          			var i = str.lastIndexOf('/')+1;
+          		}						
+          		var filename = str.slice(i);			
+          		var uploaded = document.getElementById("fileformlabel");
+          		uploaded.innerHTML = filename;
+          	}
+          </script>
+
+          <script type="text/javascript">
+          	$("#js-footer").load("footer.html");
+          </script>
 
 
 
-<!-- Custom scroll script -->
-<script>
-	(function($){
-		$(window).load(function(){
-			$(".contacts").mCustomScrollbar({
-				theme: "minimal-dark",
-				scrollInertia: 70
+          <!-- Custom scroll script -->
+          <script>
+          	(function($){
+          		$(window).load(function(){
+          			$(".contacts").mCustomScrollbar({
+          				theme: "minimal-dark",
+          				scrollInertia: 70
+          			});
+          			var top = $('div.box-one-message:last').offset().top;
+          			$(".message-box").mCustomScrollbar({
+          				theme: "minimal-dark",
+          				scrollInertia: 70
 			});
-			$(".message-box").mCustomScrollbar({
-				theme: "minimal-dark",
-				scrollInertia: 70
-			});
-		});
-	})(jQuery);
-</script>
 
+          			$(".message-box").mCustomScrollbar("scrollTo","bottom", {
+          				scrollInertia: 100
+          			});
+          		});
+          	})(jQuery);
+          </script>
 
-        <script src="js/layout.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-         <!-- the mousewheel plugin - optional to provide mousewheel support -->
-        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-        <!-- the jScrollPane script -->
-        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-        <script type="text/javascript" src="js/mwheelIntent.js"></script>
-				<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+          <!-- Script that moves scroll to the newest messages -->
+          <script>
+          	$("div.message-box").scrollTop($('div.box-one-message:last').offset().top);
+          </script>
 
-    </body>
-</html>
+          <!-- End script -->
+
+          <script src="js/layout.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <!-- the mousewheel plugin - optional to provide mousewheel support -->
+          <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+          <!-- the jScrollPane script -->
+          <script type="text/javascript" src="js/mwheelIntent.js"></script>
+          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        </body>
+        </html>
