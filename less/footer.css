@@ -1,10 +1,13 @@
-.footer-style {
+﻿.footer-style {
   background-color: #222222;
   padding: 18px 0;
 }
 .footer-style .container {
   background: url("../img/footer-logo.png") center left;
   background-repeat: no-repeat;
+}
+.footer-style .container .row div {
+  margin-bottom: 20px;
 }
 .footer-style ul {
   list-style-type: none;
@@ -26,3 +29,4 @@
   color: #565656;
   padding-top: 28px;
 }
+/*# sourceMappingURL=footer.css.map */

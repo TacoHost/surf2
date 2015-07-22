@@ -2702,6 +2702,9 @@
   background: url("../img/footer-logo.png") center left;
   background-repeat: no-repeat;
 }
+.footer-style .container .row div {
+  margin-bottom: 20px;
+}
 .footer-style ul {
   list-style-type: none;
   margin: 0;
