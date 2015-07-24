@@ -1,4 +1,4 @@
-.breadcrumbs-block {
+﻿.breadcrumbs-block {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
@@ -309,6 +309,9 @@
   font-size: 77px;
   line-height: 50px;
 }
+.container {
+  text-align: justify;
+}
 .article-item {
   font-size: 14px;
   line-height: 150%;
@@ -328,8 +331,6 @@
 .article-item img {
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
-=======
 .about-author .list-unstyled {
   font-size: 12px;
   color: #1f1f1f;
@@ -352,4 +353,3 @@
   color: #63696d;
 }
 /*# sourceMappingURL=article-page.css.map */
->>>>>>> 43a98f41e1af9ab6adde7a17bf9a5f6bf8a688c6

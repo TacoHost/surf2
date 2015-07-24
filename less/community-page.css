@@ -309,6 +309,9 @@
   font-size: 77px;
   line-height: 50px;
 }
+.container {
+  text-align: justify;
+}
 .article-item {
   font-size: 14px;
   line-height: 150%;
